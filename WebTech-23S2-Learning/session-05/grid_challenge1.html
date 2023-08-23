@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery Grid using CSS Grid</title>
+    <style>
+      /* Grid Container */
+      .gallery-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*Three columns on desktop screen*/
+        grid-gap:10px;
+      }
 
-</body>
+      /* Gallery Item (Image) */
+      .gallery-item{
+        width: 200px;
+        height: 100px;
+        padding-bottom: 20px;
+      }
+
+      /* Media Query for Responsive Layout */
+      @media (max-width: 768px) {
+        .garelly-container{
+          grid-template-columns: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery-container">
+      <img class="gallery-item" src="https://placehold.co/300" alt="Image 1" />
+      <img class="gallery-item" src="https://placehold.co/300" alt="Image 2" />
+      <img class="gallery-item" src="https://placehold.co/300" alt="Image 3" />
+      <img class="gallery-item" src="https://placehold.co/300" alt="Image 4" />
+      <img class="gallery-item" src="https://placehold.co/300" alt="Image 5" />
+    </div>
+  </body>
 </html>

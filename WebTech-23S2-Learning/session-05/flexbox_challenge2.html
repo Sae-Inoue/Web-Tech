@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Challenge 2</title>
+    <style>
+      /* Flexbox for Cards*/
+      .card-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .card{
+        width: 30%;
+        background-color: orange;
+        padding-bottom: 15%;
+        margin-bottom: 5%;
+      }
 
-</body>
+      /* Media Query for Responsive Layout */
+      @media (max-width: 768px) {
+        .card-container{
+            flex-direction: column;
+        }
+
+        .card{
+            width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+    </div>
+  </body>
 </html>
