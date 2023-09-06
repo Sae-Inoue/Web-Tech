@@ -1,1 +1,13 @@
+#max-img {
+    max-width:100%;
+    height: auto;
+}
+
+table{
+    border-width: 20px;
+    border-style: wave;
+    border-color: #0c1118;
+}
+
+
 
