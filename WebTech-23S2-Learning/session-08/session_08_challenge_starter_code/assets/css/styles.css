@@ -4,10 +4,11 @@
 }
 
 table{
-    border-width: 20px;
-    border-style: wave;
-    border-color: #0c1118;
+    border-collapse: collapse;
 }
 
-
+th, td{
+    border: 2px solid black;
+    padding: 8px;
+}
 
