@@ -1,14 +1,13 @@
-// Challenge 5 Starter
-const sidebar = document.querySelector('.sidebar');
+// Initialise the array
+let numbers = [1, 2, 3, 4, 5];
 
-function toggleSidebarContent() {
-  // Your code goes here
+// Define the function doubleNumbers
+function doubleNumbers(arr) {
+
 }
 
-// Add a button to toggle the sidebar content
-const toggleButton = document.createElement('button');
-toggleButton.textContent = 'Toggle Sidebar Content';
-toggleButton.addEventListener('click', toggleSidebarContent);
+// Call the function with the numbers array
+let result = doubleNumbers(numbers);
 
-// Append the button to the body
-document.body.appendChild(toggleButton);
+// Console log the new array
+console.log(result);
