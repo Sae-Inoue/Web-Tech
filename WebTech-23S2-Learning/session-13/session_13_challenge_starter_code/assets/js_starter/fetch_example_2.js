@@ -1,5 +1,5 @@
 // Fetch example 2
-fetch('https://jsonplaceholder.typicode.com/postses')
+fetch('https://jsonplaceholder.typicode.com/posts')
 .then(function (response) {
   // The API call was successful
   // (wait, it was?)

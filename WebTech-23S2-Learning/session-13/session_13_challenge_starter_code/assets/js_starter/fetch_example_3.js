@@ -1,5 +1,5 @@
 // Fetch example 2
-fetch('https://jsonplaceholder.typicode.com/postses')
+fetch('https://jsonplaceholder.typicode.com/posts')
 .then(function (response) {
 	// If the response is successful, get the JSON
 	if (response.ok) {
