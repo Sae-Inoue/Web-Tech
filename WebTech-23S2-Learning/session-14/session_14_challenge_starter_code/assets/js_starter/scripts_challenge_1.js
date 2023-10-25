@@ -1,4 +1,3 @@
-// Challenge 1 Starter
 const userObject = {
     firstName: "John",
     lastName: "Doe",
@@ -17,13 +16,14 @@ const userObject = {
     isEmployed: true,
 
     // Method to change the age property
-
+    changeAge(newAge) {
+        this.age = newAge;
+    }
 };
 
 // Execute the method to change the age
-
+userObject.changeAge(35);
 
 // Log the updated complexObject
-
-
+console.log(userObject);
 
